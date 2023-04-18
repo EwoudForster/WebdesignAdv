@@ -1,0 +1,72 @@
+@use "sass:color";
+
+$sasscolor: #cf649a;
+$fontstack: Verdana, sans-serif;
+$fontsize: 14px;
+
+@mixin colorcombo($front: #151515, $back: #f1f1f1) {
+  color: $front;
+  background-color: $back;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $fontsize;
+}
+
+body {
+  font-family: $fontstack;
+  line-height: 1.5;
+
+  //color = default (#151515), background-color = default (#f1f1f1)
+  @include colorcombo;
+
+  //color = black, background-color = default (#f1f1f1)
+  //@include colorcombo(black);
+
+  //color = default (#151515), background-color = lightgray
+  //@include colorcombo($back:lightgray);
+}
+
+main, footer {
+  padding: 0 1rem;
+}
+
+h1 {
+  @include colorcombo($sasscolor, inherit);
+}
+
+h1, p, ul {
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-left: 2rem;
+}
+
+footer {
+  @include colorcombo(inherit, color.scale(color.invert($sasscolor), $lightness: 75%));
+
+  p {
+    padding: 1rem 0;
+  }
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  @include colorcombo(color.scale($sasscolor, $lightness: -50%), inherit);
+
+  &:focus {
+    outline: 2px solid $sasscolor;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

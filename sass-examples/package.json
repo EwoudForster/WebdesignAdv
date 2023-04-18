@@ -1,0 +1,18 @@
+{
+  "name": "sass-examples",
+  "version": "",
+  "description": "1ITF, Webdesign Advanced, Sass examples",
+  "main": "",
+  "scripts": {
+    "watch": "live-server --port=8090",
+    "example1A": "cd ./example1A && sass scss:dist/css --watch",
+    "example1B": "cd ./example1B && sass scss:dist/css --watch",
+    "example1C": "cd ./example1C && sass scss:dist/css --watch",
+    "example1D": "cd ./example1D && sass scss:dist/css --watch",
+    "example1E": "cd ./example1E && sass scss:dist/css --watch",
+    "example2": "cd ./example2 && sass scss:dist/css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Forms</title>
+</head>
+<body>
+<nav class="container hide-on-print">
+    <ul>
+        <li title="Home"><a href="index.html">
+            <span class="fas fa-home fa-lg"></span>
+            <span>Home</span></a>
+        </li>
+        <li title="Images"><a href="images.html">
+            <span class="fas fa-image fa-lg"></span>
+            <span>Images</span></a>
+        </li>
+        <li title="Alerts"><a href="alert.html">
+            <span class="fas fa-exclamation-circle fa-lg"></span>
+            <span>Alerts</span></a>
+        </li>
+        <li title="Forms"><a href="form.html">
+            <span class="fas fa-list fa-lg"></span>
+            <span>Forms</span></a>
+        </li>
+        <li title="Grid"><a href="grid.html">
+            <span class="fas fa-border-all fa-lg"></span>
+            <span>Grid</span></a>
+        </li>
+    </ul>
+</nav>
+<main class="container">
+    <h1>Forms</h1>
+    <form action="#!" method="post">
+        <div>
+            <label for="name">Your mame:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="email">Your email:</label>
+            <input type="email" name="email" id="email" required placeholder="demo@example.com">
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10" minlength="5"></textarea>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="agree" id="agree" required>
+                I have read and agree to the privacy policy.
+            </label>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    <h2>a-tags with class .btn-xxx</h2>
+    <p>
+        <a href="#!" class="btn-success ">btn-success</a>
+        <a href="#!" class="btn-info">btn-info</a>
+        <a href="#!" class="btn-danger">btn-danger</a>
+    </p>
+    <h2>Form inside grid</h2>
+    <form action="#!" method="post" class="row">
+        <div class="col-md-6">
+            <label for="name2">Your mame:</label>
+            <input type="text" name="name" id="name2" required minlength="5">
+        </div>
+        <div class="col-md-6">
+            <label for="email2">Your email:</label>
+            <input type="email" name="email" id="email2" required placeholder="demo@example.com">
+        </div>
+        <div class="col-md-12">
+            <label for="message2">Message:</label>
+            <textarea name="message" id="message2" cols="30" rows="10" minlength="5"></textarea>
+        </div>
+        <div class="col-md-12">
+            <label>
+                <input type="checkbox" name="agree" id="agree2" required>
+                I have read and agree to the privacy policy.
+            </label>
+        </div>
+        <div class="col-md-12">
+            <button type="submit">Submit</button>
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</main>
+<script src="js/jquery.min.js"></script>
+<script src="js/tm_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "name": "TM_Sass_framework.git",
+  "version": "1.0.0",
+  "description": "Thomas More CSS framework build with Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pverhaert/TM_Sass_framework.git"
+  },
+  "keywords": [
+    "Thomas More Kempen",
+    "Sass",
+    "CSS framework"
+  ],
+  "author": "Patrick Verhaert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pverhaert/TM_Sass_framework/issues"
+  },
+  "homepage": "https://github.com/pverhaert/TM_Sass_framework#readme",
+  "devDependencies": {
+    "@lipemat/css-mqpacker": "^8.0.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-dart-sass": "^0.9.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "jquery": "^3.5.0",
+    "ngrok": "^4.3.3"
+  }
+}

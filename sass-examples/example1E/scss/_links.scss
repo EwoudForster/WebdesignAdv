@@ -1,0 +1,15 @@
+@use "sass:color";
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  @include colorcombo(color.scale($sasscolor, $lightness:-50%), inherit);
+
+  &:focus {
+    outline: 2px solid $sasscolor;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

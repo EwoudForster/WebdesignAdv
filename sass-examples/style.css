@@ -1,0 +1,27 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+h1 {
+    color: #cf649a;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-left: 2rem;
+    margin-bottom: 0.25rem;
+}
